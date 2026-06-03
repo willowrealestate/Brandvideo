@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Willow Real Estate — Instagram Post · 5 Leombruno Way</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+  /* Brand fonts: Richmond Display (heading), Forma DJR (body) — with web-safe fallbacks */
+  :root {
+    --cream:  #F2EEEB;
+    --dark:   #282018;
+    --rule:   rgba(40, 32, 24, 0.14);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width:  1080px;
+    height: 1080px;
+    background: var(--cream);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ── Outer frame ── */
+  .canvas {
+    width:  1000px;
+    height: 1000px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 90px 56px;
+  }
+
+  /* Corner bracket marks */
+  .corner {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+  }
+  .tl { top: 0;    left: 0;  border-top:    1px solid var(--dark); border-left:  1px solid var(--dark); opacity: .35; }
+  .tr { top: 0;    right: 0; border-top:    1px solid var(--dark); border-right: 1px solid var(--dark); opacity: .35; }
+  .bl { bottom: 0; left: 0;  border-bottom: 1px solid var(--dark); border-left:  1px solid var(--dark); opacity: .35; }
+  .br { bottom: 0; right: 0; border-bottom: 1px solid var(--dark); border-right: 1px solid var(--dark); opacity: .35; }
+
+  /* ── Top: logo + agency name ── */
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .logo { width: 66px; height: auto; }
+
+  .agency {
+    font-family: 'DM Sans', 'Forma DJR', sans-serif;
+    font-size: 10.5px;
+    font-weight: 300;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: .55;
+  }
+
+  /* ── Middle: property details ── */
+  .middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  .label {
+    font-family: 'DM Sans', 'Forma DJR', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 6.5px;
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: .42;
+    margin-bottom: 18px;
+  }
+
+  .sold {
+    font-family: 'Cormorant Garamond', 'Richmond Display', serif;
+    font-size: 136px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--dark);
+    line-height: .88;
+    letter-spacing: -1px;
+  }
+
+  .price {
+    font-family: 'Cormorant Garamond', 'Richmond Display', serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--dark);
+    letter-spacing: 3px;
+    margin-top: 22px;
+  }
+
+  .rule {
+    width: 280px;
+    height: 1px;
+    background: var(--rule);
+    margin: 32px auto;
+  }
+
+  .rule-short {
+    width: 36px;
+    height: 1px;
+    background: var(--rule);
+    margin: 26px auto;
+  }
+
+  .address-street {
+    font-family: 'DM Sans', 'Forma DJR', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 10px;
+  }
+
+  .address-suburb {
+    font-family: 'DM Sans', 'Forma DJR', sans-serif;
+    font-size: 12.5px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: .55;
+  }
+
+  .features {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-family: 'DM Sans', 'Forma DJR', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: .60;
+  }
+
+  .dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--dark);
+    opacity: .35;
+    flex-shrink: 0;
+  }
+
+  /* ── Bottom: website ── */
+  .bottom {
+    font-family: 'DM Sans', 'Forma DJR', sans-serif;
+    font-size: 9.5px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: .3;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <!-- Corner marks -->
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+
+  <!-- Top -->
+  <div class="top">
+    <!-- Willow crown logo (SVG recreation) -->
+    <svg class="logo" viewBox="0 0 510 540" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 25,560 L 25,165 A 140,140 0 0,0 305,165 L 305,560"
+            fill="none" stroke="#282018" stroke-width="50" stroke-linecap="butt"/>
+      <path d="M 280,560 L 280,225 A 95,95 0 0,0 470,225 L 470,560"
+            fill="none" stroke="#282018" stroke-width="50" stroke-linecap="butt"/>
+    </svg>
+    <span class="agency">Willow Real Estate</span>
+  </div>
+
+  <!-- Middle -->
+  <div class="middle">
+    <span class="label">Proudly Sold</span>
+    <div class="sold">Sold</div>
+    <div class="price">$865,500</div>
+
+    <div class="rule"></div>
+
+    <div class="address-street">5 Leombruno Way</div>
+    <div class="address-suburb">Virginia</div>
+
+    <div class="rule-short"></div>
+
+    <div class="features">
+      <span>5 Bed</span>
+      <span class="dot"></span>
+      <span>2 Bath</span>
+      <span class="dot"></span>
+      <span>2 Car</span>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="bottom">willowrealestate.com.au</div>
+
+</div>
+</body>
+</html>
